@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="icon" href="your-image-path/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         body {
             margin: 0;
@@ -73,18 +73,29 @@
             border-top: 1px solid #ddd;
             padding: 20px 0;
             background-color: #f9f9f9;
+            position: relative;
         }
         .skills {
-            display: inline-block;
+            display: flex;
             animation: marquee 10s linear infinite;
+        }
+        .skills div {
+            display: inline-block;
+            padding-right: 50px;
         }
         @keyframes marquee {
             0% {
-                transform: translateX(100%);
+                transform: translateX(0);
             }
             100% {
-                transform: translateX(-100%);
+                transform: translateX(-50%);
             }
+        }
+        .skills {
+            display: flex;
+        }
+        .skills-container .skills {
+            will-change: transform;
         }
     </style>
 </head>
@@ -97,8 +108,8 @@
 
     <header>
         <div class="intro">
-            <h1>Mrunal Dhaygude</h1>
-            <p>Currently, <strong>Product Designer at Fletch AI.</strong><br>Based in San Francisco.</p>
+            <h1>Ritwik Kulkarni</h1>
+            <p>Currently, <strong>PhD Candidate and Graduate Research Assistant.</strong><br>at Purdue University.</p>
             <a href="#" class="button">LinkedIn</a>
         </div>
         <div class="graphic">
@@ -108,19 +119,38 @@
 
     <div class="skills-container">
         <div class="skills">
-            Accessibility &nbsp; Design Tools &nbsp; Branding &nbsp; Visual Design &nbsp; Prototyping &nbsp; UX Design &nbsp; Research &nbsp; A &nbsp; B &nbsp; C
+            <div>COMSOL</div>
+            <div>ANSYS Workbench</div>
+            <div>ANSYS Icepak</div>
+            <div>Solidworks</div>
+            <div>Prototyping</div>
+            <div>Python</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>MATLAB</div>
+            <div>Labview</div>
+            <div>COMSOL</div>
+            <div>ANSYS Workbench</div>
+            <div>ANSYS Icepak</div>
+            <div>Solidworks</div>
+            <div>Prototyping</div>
+            <div>Python</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>MATLAB</div>
+            <div>Labview</div>
         </div>
     </div>
 
     <footer>
         <div class="footer-links">
-            <a href="#">Accessibility</a>
-            <a href="#">Design Tools</a>
-            <a href="#">Branding</a>
-            <a href="#">Visual Design</a>
-            <a href="#">Prototyping</a>
-            <a href="#">UX Design</a>
-            <a href="#">Research</a>
+            <a href="#">Abouty</a>
+            <a href="#">Resume</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Publications</a>
+            <a href="#">Experiences</a>
+            <a href="#">CV</a>
+            <a href="#">Resume</a>
         </div>
     </footer>
 </body>
