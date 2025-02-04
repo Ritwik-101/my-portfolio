@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="your-image-path/favicon.ico" type="image/x-icon">
     <style>
         body {
             margin: 0;
@@ -67,6 +67,25 @@
             color: #000;
             font-size: 0.9rem;
         }
+        .skills-container {
+            overflow: hidden;
+            white-space: nowrap;
+            border-top: 1px solid #ddd;
+            padding: 20px 0;
+            background-color: #f9f9f9;
+        }
+        .skills {
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
     </style>
 </head>
 <body>
@@ -78,14 +97,20 @@
 
     <header>
         <div class="intro">
-            <h1>Ritwik Kulkarni</h1>
-            <p>Currently, <strong>PhD Candidate and Graduate Research Assistant.</strong><br>Based at Purdue University.</p>
+            <h1>Mrunal Dhaygude</h1>
+            <p>Currently, <strong>Product Designer at Fletch AI.</strong><br>Based in San Francisco.</p>
             <a href="#" class="button">LinkedIn</a>
         </div>
         <div class="graphic">
             <p>Graphic Placeholder<br>(Insert image here)</p>
         </div>
     </header>
+
+    <div class="skills-container">
+        <div class="skills">
+            Accessibility &nbsp; Design Tools &nbsp; Branding &nbsp; Visual Design &nbsp; Prototyping &nbsp; UX Design &nbsp; Research &nbsp; A &nbsp; B &nbsp; C
+        </div>
+    </div>
 
     <footer>
         <div class="footer-links">
