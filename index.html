@@ -3,32 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #000;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            color: #000;
+            font-weight: bold;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+        }
+        header .intro {
+            max-width: 50%;
+        }
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .graphic {
+            width: 40%;
+            border: 2px solid #000;
+            padding: 10px;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid #ddd;
+            padding: 20px;
+        }
+        .footer-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-        </ul>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
     </nav>
+
     <header>
-        <h1>Your Name</h1>
-        <p>Currently, [Your Role] at [Your Company]. Based in [Your Location].</p>
-        <a href="https://www.linkedin.com/in/ritwik-kulkarni/" class="button">LinkedIn</a>
+        <div class="intro">
+            <h1>Mrunal Dhaygude</h1>
+            <p>Currently, <strong>Product Designer at Fletch AI.</strong><br>Based in San Francisco.</p>
+            <a href="#" class="button">LinkedIn</a>
+        </div>
+        <div class="graphic">
+            <p>Graphic Placeholder<br>(Insert image here)</p>
+        </div>
     </header>
-    <section>
-        <img src="diagram-placeholder.png" alt="Diagram of Interests">
-    </section>
+
     <footer>
-        <ul>
-            <li>Accessibility</li>
-            <li>Design Tools</li>
-            <li>Branding</li>
-            <li>UX Design</li>
-        </ul>
+        <div class="footer-links">
+            <a href="#">Accessibility</a>
+            <a href="#">Design Tools</a>
+            <a href="#">Branding</a>
+            <a href="#">Visual Design</a>
+            <a href="#">Prototyping</a>
+            <a href="#">UX Design</a>
+            <a href="#">Research</a>
+        </div>
     </footer>
 </body>
 </html>
